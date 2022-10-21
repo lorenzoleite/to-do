@@ -1,0 +1,75 @@
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 1.5rem;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+
+  background-color: var(--gray-500);
+  color: var(--gray-100);
+  
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+}
+
+.todo .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.todo label {
+  line-height: 140%;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.todo .deleteIcon {
+  padding: 0.5rem;
+  line-height: 0;
+  cursor: pointer;
+
+  color: var(--gray-300);
+  border-radius: 4px;
+
+  transition: all 0.2s;
+}
+
+.todo .deleteIcon:hover {
+  background-color: var(--gray-400);
+  color: var(--danger);
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+
+  border: 0.5rem solid transparent;
+  border-radius: 50%;
+
+  box-shadow: 0 0 0 2px var(--blue);
+  transition: all 0.2s;
+}
+
+input[type="checkbox"]:focus-visible {
+  outline-offset: 0;
+}
+
+input[type="checkbox"]:hover {
+  box-shadow: 0 0 0 2px var(--blue-dark);
+  background-color: var(--blue-dark-20);
+}
+
+input[type="checkbox"]:checked {
+  box-shadow: 0 0 0 2px var(--purple-dark);
+  background-color: var(--purple-dark);
+}
+/* 
+input[type="checkbox"]:checked:before {
+  content: "✓";
+  width: 0;
+  height: 0;
+} */

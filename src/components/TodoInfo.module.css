@@ -1,0 +1,36 @@
+.todoInfo {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.todoInfo div {
+  display: flex;
+}
+
+.todoInfo div p {
+  margin-right: 0.5rem;
+}
+
+.todoInfo div .todoCreated {
+  color: var(--blue);
+}
+
+.todoInfo div .todoDone {
+  color: var(--purple);
+}
+
+.todoInfo div span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.125rem 0.5rem;
+  background: var(--gray-400);
+  width: auto;
+  border-radius: 1000px;
+
+  font-size: 0.75rem;
+}

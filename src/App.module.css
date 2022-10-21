@@ -1,0 +1,5 @@
+.wrapper {
+  max-width: 46rem;
+  margin: 0 auto; /*centralizar*/
+  padding: 0 1rem; /*quando diminuir a tela, não grudar o conteúdo nas laterais*/
+}
