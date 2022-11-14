@@ -26,6 +26,11 @@
   text-align: justify;
 }
 
+.todo .labelChecked {
+  color: var(--gray-300);
+  text-decoration: line-through;
+}
+
 .todo .deleteIcon {
   padding: 0.5rem;
   line-height: 0;
@@ -67,9 +72,15 @@ input[type="checkbox"]:checked {
   box-shadow: 0 0 0 2px var(--purple-dark);
   background-color: var(--purple-dark);
 }
-/* 
+
+input[type="checkbox"]:checked:hover {
+  box-shadow: 0 0 0 2px var(--purple);
+  background-color: var(--purple);
+}
+
 input[type="checkbox"]:checked:before {
-  content: "✓";
-  width: 0;
-  height: 0;
-} */
+  content: "\f0aa";
+  margin: 0;
+  padding: 0;
+  color: var(--gray-100);
+}
