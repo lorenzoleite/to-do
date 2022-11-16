@@ -24,6 +24,12 @@
   line-height: 140%;
   font-weight: 400;
   text-align: justify;
+  cursor: pointer;
+
+  word-break: break-all;
+  user-select: none;
+  
+  transition: all 0.2s;
 }
 
 .todo .labelChecked {
@@ -48,13 +54,19 @@
 }
 
 input[type="checkbox"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.1rem;
+  height: 1.1rem;
+  
   appearance: none;
   -webkit-appearance: none;
   cursor: pointer;
 
   border: 0.5rem solid transparent;
   border-radius: 50%;
-
+  
   box-shadow: 0 0 0 2px var(--blue);
   transition: all 0.2s;
 }
@@ -79,8 +91,7 @@ input[type="checkbox"]:checked:hover {
 }
 
 input[type="checkbox"]:checked:before {
-  content: "\f0aa";
-  margin: 0;
-  padding: 0;
+  content: "\2713";
+  
   color: var(--gray-100);
 }
